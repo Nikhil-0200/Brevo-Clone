@@ -167,7 +167,7 @@ html, body{
 }
 #page-2-m{
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -248,27 +248,99 @@ html, body{
     height: 100%;
     object-fit: cover;
 }
-#item1{
+#item1a{
     background-color: #DBD9F7;
 }
-#item2{
+
+#item2a{
     background-color: #FFE7E0;
 }
-#item3{
+#item3a{
     background-color: #FCE2EB;
 }
-#item4{
+#item4a{
     background-color: #DBF4F4;
 }
-#item1:hover{
-    border: 4px solid #DBD9F7;
+
+#item1a:hover{
+    border: 2px solid #6359DE;
+    transition: border 0s ;
 }
-#item2:hover{
-    border: 4px solid #FFE7E0;
+#item2a:hover{
+    border: 2px solid #FF6C3E;
+    transition: border 0s ;
+}#item3a:hover{
+    border: 2px solid #EB427F;
+    transition: border 0s ;
+}#item4a:hover{
+    border: 2px solid #1EB9B9;
+    transition: border 0s ;
 }
-#item3:hover{
-    border: 4px solid #FCE2EB;
+
+#page-2-m1{
+    width: 100%;
+    min-height: 80vh;
+    /* background-color: red; */
 }
-#item4:hover{
-    border: 4px solid #DBF4F4;
+#page-2-m1 > #green-div{
+    width: 100%;
+    height: 72vh;
+    background-color: #006A43;
+    margin-top: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+    position: relative;
 }
+#green-img{
+    width: 400px;
+    height: 270px;
+    border-radius: 35px;
+    position: absolute;
+    left: 120px;
+    top: -100px;
+    background-image: url(https://corp-backend.brevo.com/wp-content/uploads/2023/10/Image-for-BF-ebook-promo-on-homepage_EN.jpg);
+    background-position: calc();
+    background-size: cover;
+}
+
+#green-box{
+    width: 55%;
+    height: max-content;
+    /* background-color: red; */
+    color: #FFFFFF;
+    font-family:"Inter Medium" ;
+}
+#green-box > h4{
+    font-weight: 50;
+    font-size: medium;
+}#green-box > h1{
+    font-weight: 650;
+    font-size: 3vw;
+    padding: 25px 0px;
+    letter-spacing: 1px;
+}
+#green-box > h3{
+    font-weight: 50;
+    font-size: large;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+#green-box > button{
+        border: 2px solid #126144;
+        border-radius: 18px;
+        font-family: "Inter Medium";
+        font-size: 1.3vw;
+        color:#FFFFFF ;
+        background-color: #1B1B1B;
+        padding: 13px 28px;
+        transition: all ease 0.5s;
+    }
+    #green-box> button:hover{
+        background-color: #FFFFFF;
+        color: #1F1F1F;
+    }
+
