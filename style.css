@@ -343,4 +343,86 @@ html, body{
         background-color: #FFFFFF;
         color: #1F1F1F;
     }
-
+    #everyone{
+        width: 100%;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #eve-left{
+        /* background-color: red; */
+        width: 40%;
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        justify-content: space-between;
+    }
+    #eve-left > h1{
+        font-family: "Inter Medium";
+    font-size: 3.7vw;
+    color: #0B996E;
+    font-weight: 580;
+    line-height: 55px;
+    }
+    #eve-left > div > h3{
+        font-family: "Inter Medium";
+        font-size: 1.5vw;
+        color: #1b1b1bee;
+        font-weight: 650;
+        letter-spacing: 1.1px;
+        padding-bottom: 20px;
+        transition: all ease 0.5s;
+    }
+    #eve-left > div > h3:hover{
+        color: #0B996F;
+        text-decoration: underline;
+       transition: color 0s ;  
+    }
+    #customers{
+        border: 2px solid #126144;
+        border-radius: 18px;
+        font-family: "Inter Medium";
+        font-size: 1.3vw;
+        color:#FFFFFF ;
+        background-color: #1B1B1B;
+        padding: 13px 28px;
+        transition: all ease 0.5s;
+    }
+    #eve-right{
+        background-color: blue;
+        width: 42%;
+        height: 470px;
+        position: relative;
+    }
+    #eve-right > #right-img{
+        width: 180px;
+        height: 180px;
+        border-top-right-radius: 50px ;
+        border-bottom-left-radius: 50px ;
+        border: 2px solid #0B996F;
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        z-index: 1;
+    }
+    #eve-right > #right-img > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-right-radius: 50px ;
+        border-bottom-left-radius: 50px ;
+    }
+    #eve-right > #right-msg{
+        width: 380px;
+        height: 280px;
+        border-top-left-radius: 80px ;
+        border-bottom-right-radius: 80px ;
+        border: 2px solid #0B996F;
+        position: absolute;
+        right: 5px;
+        bottom: 50px;
+    }
