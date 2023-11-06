@@ -350,6 +350,7 @@ html, body{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding-bottom: 50px;
     }
     #eve-left{
         /* background-color: red; */
@@ -368,6 +369,10 @@ html, body{
     font-weight: 580;
     line-height: 55px;
     }
+    #eve-left > div > h3 > .ri-arrow-right-line{
+        opacity: 0;
+    }
+    
     #eve-left > div > h3{
         font-family: "Inter Medium";
         font-size: 1.5vw;
@@ -392,8 +397,12 @@ html, body{
         padding: 13px 28px;
         transition: all ease 0.5s;
     }
+    #customers:hover{
+        background-color: #FFFFFF;
+        color: #1F1F1F;
+    }
     #eve-right{
-        background-color: blue;
+        /* background-color: blue; */
         width: 42%;
         height: 470px;
         position: relative;
@@ -422,7 +431,133 @@ html, body{
         border-top-left-radius: 80px ;
         border-bottom-right-radius: 80px ;
         border: 2px solid #0B996F;
+        background-color: #D7FEC8;
         position: absolute;
         right: 5px;
         bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    #right-msg > div{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+    #right-msg > div > h4{
+        font-family: "Inter Medium";
+        color: #0B996F;
+        font-weight: 50;
+        font-size: large;
+        line-height: 25px;
+        padding-bottom: 25px;
+        letter-spacing: 0.5px;
+    }
+    #right-msg > div > #msg-one{
+        font-family: "Inter Medium";
+        color: black;
+        font-weight: 200;
+        font-size: 1vw;
+        line-height: 25px;
+    }
+    #right-msg > div > #msg-two{
+        font-family: "Inter Medium";
+        color: rgba(0, 0, 0, 0.805);
+        font-weight: 50;
+        font-size: 1vw;
+    }
+    #blue{
+        width: 100%;
+        min-height: 140vh;
+        background-color: #6358DE;
+        border-top-left-radius:  90px 90px ;
+        border-top-right-radius:  90px 90px ;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+    #blue > #blue1{
+        width: 70%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        gap: 35px;
+    }
+    #blue > #blue1 > h1{
+        font-family: "Inter Medium";
+        color: #FFFFFF;
+        font-size: 3vw;
+    }
+    #blue > #blue1 > h4{
+        color: #FFFFFF;
+        font-family: "Inter Medium";
+        font-size: 1.3vw;
+        font-weight: 50;
+        text-align: center;
+        line-height: 25px;
+    }
+    #blue > #blue2{
+        width: 90%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /* background-color: black; */
+    }
+    #blue > #blue2 > img{
+        padding-left: 100px;
+        /* background-color: red; */
+    }
+    #blue > #blue3{
+        width: 78%;
+        height: 200px;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+    }
+    #blue3 > #star{
+        width: 85%;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* background-color: #006A43; */
+        margin: auto;
+        gap: 20px;
+    }
+    #blue3 > #star >.star-dett{
+        width: 80%;
+        height: 130px;
+        font-family:"Inter Medium";
+        color: #6358DE;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #blue3 > #star >.star-dett > .star-point{
+        display: flex;
+        flex-direction: row;
+        scale: 1.8;
+        gap: 3px;
+    }
+    #blue3 > #star >.star-dett > .star-point > h3{
+        font-size: 0.8vw;
+        font-weight: 400;
+        padding-right: 5px;
+        padding-top: 2px;
+    }
+    .star-heading{
+        font-size: 1.3vw;
+        font-weight: lighter;
+        color: #6459ded6;
+        padding-top: 2px;
     }
