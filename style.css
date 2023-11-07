@@ -13,7 +13,9 @@ html, body{
     height: 100%;
     width: 100%;
 }
-
+#main{
+    overflow-x: hidden;
+}
 #nav{
     width: 100%;
     height: 105px;
@@ -27,7 +29,7 @@ html, body{
     z-index: 2;
 }
 
-#nav > #nav1{
+#nav1{
     flex-direction: row;
     display: inline;
     /* background-color: aqua; */
@@ -85,10 +87,13 @@ html, body{
     background-color: #126144;
     padding: 13px 28px;
     transition: all ease 0.5s;
+    cursor: default;
+
 }
 .signup:hover{
     background-color: #FFFFFF;
     color: #006A43;
+    cursor: pointer;
 }
 
 #page-1{
@@ -250,31 +255,39 @@ html, body{
 }
 #item1a{
     background-color: #DBD9F7;
+    cursor: default;
 }
 
 #item2a{
     background-color: #FFE7E0;
+    cursor: default;
 }
 #item3a{
     background-color: #FCE2EB;
+    cursor: default;
 }
 #item4a{
     background-color: #DBF4F4;
+    cursor: default;
 }
 
 #item1a:hover{
     border: 2px solid #6359DE;
     transition: border 0s ;
+    cursor: pointer;
 }
 #item2a:hover{
     border: 2px solid #FF6C3E;
     transition: border 0s ;
+    cursor: pointer;
 }#item3a:hover{
     border: 2px solid #EB427F;
     transition: border 0s ;
+    cursor: pointer;
 }#item4a:hover{
     border: 2px solid #1EB9B9;
     transition: border 0s ;
+    cursor: pointer;
 }
 
 #page-2-m1{
@@ -329,7 +342,7 @@ html, body{
     line-height: 25px;
     padding-bottom: 25px;
 }
-#green-box > button{
+#green-box > a > button{
         border: 2px solid #126144;
         border-radius: 18px;
         font-family: "Inter Medium";
@@ -338,10 +351,12 @@ html, body{
         background-color: #1B1B1B;
         padding: 13px 28px;
         transition: all ease 0.5s;
+        cursor: default;
     }
-    #green-box> button:hover{
+    #green-box> a > button:hover{
         background-color: #FFFFFF;
         color: #1F1F1F;
+        cursor: pointer;
     }
     #everyone{
         width: 100%;
@@ -381,11 +396,13 @@ html, body{
         letter-spacing: 1.1px;
         padding-bottom: 20px;
         transition: all ease 0.5s;
+        cursor: default;
     }
     #eve-left > div > h3:hover{
         color: #0B996F;
         text-decoration: underline;
-       transition: color 0s ;  
+       transition: color 0s ;
+       cursor: pointer;  
     }
     #customers{
         border: 2px solid #126144;
@@ -396,10 +413,12 @@ html, body{
         background-color: #1B1B1B;
         padding: 13px 28px;
         transition: all ease 0.5s;
+        cursor: default;
     }
     #customers:hover{
         background-color: #FFFFFF;
         color: #1F1F1F;
+        cursor: pointer;
     }
     #eve-right{
         /* background-color: blue; */
@@ -696,7 +715,7 @@ html, body{
 #scroller-2:hover > img{
     animation-play-state: paused;
 }
-#green-2 > button{
+#green-2 > a > button{
     width: 230px;
     border: 2px solid #126144;
     border-radius: 18px;
@@ -710,10 +729,12 @@ html, body{
     bottom: 230px;
     left: 50%;
     transform: translate(-50%);
+    cursor: default;
 }
-#green-2 > button:hover{
+#green-2 > a > button:hover{
     background-color: #FFFFFF;
     color: #1F1F1F;
+    cursor: pointer;
 }
 #sec-last{
     width: 100%;
@@ -750,7 +771,7 @@ html, body{
     justify-content: center;
     gap: 20px;
 }
-#sec-last >#sec-last-d > button{
+#sec-last >#sec-last-d > a > button{
     border: 2px solid #126144;
     border-radius: 18px;
     font-family: "Inter Medium";
@@ -759,12 +780,125 @@ html, body{
     background-color: #1B1B1B;
     padding: 13px 28px;
     transition: all ease 0.5s;
-    margin-top: 190px;
+    margin-top: 10px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    cursor: default;
 }
-#sec-last >#sec-last-d > button:hover{
+#sec-last >#sec-last-d > a > button:hover{
     background-color: #FFFFFF;
     color: #1F1F1F;
+    cursor: pointer;
+}
+#end{
+    margin-top: -240px;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+#end-head{
+    width: 90%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+#end-head > #end-logo{
+    width: 25%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#end-logo > i {
+    scale: 2;
+    color: #097555;
+    cursor: default;
+}
+#end-logo > i:hover{
+    color: #006a43ac;
+    cursor: pointer;
+}
+#end-mid-head{
+    width: 100%;
+    height: 65vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#end-mid{
+    width: 55%;
+    height: 280px;
+    /* background-color: #1EB9B9; */
+    position: relative;
+    transform: translate(62%);
+    display: flex;
+    flex-direction: row;
+}
+#end-mid > div{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#end-mid > div > h3{
+    font-family: "Inter Medium";
+    font-size: 1.2vw;
+    font-weight: 50;
+    padding-bottom: 25px;
+}
+#end-mid > div > a > h4{
+    font-family: "Inter Medium";
+    text-decoration: underline #FFFFFF;
+    font-size: 1vw;
+    font-weight: 10;
+    color: #1b1b1bb6;
+    padding-bottom: 25px;
+    cursor: default;
+}
+#end-mid > div > a >h4:hover{
+    color: #1b1b1b88;
+    text-decoration: underline #1b1b1bb6;
+    cursor: pointer;
+}
+
+#end-line{
+    position: relative;
+    width: 90%;
+    height: 120px;
+    margin: auto;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+}
+#end-line > div{
+    position: absolute;
+    right: 0;
+    width: 75%;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+#end-line >div > h4{
+    font-family: "Inter Medium";
+    font-size: 1vw;
+    font-weight: 10;
+    color: #1b1b1bd7;
+}
+#end-line >div > h4:hover{
+    color: #1b1b1b88;
+    text-decoration: underline #1b1b1bb6;
+    cursor: pointer
 }
