@@ -182,6 +182,8 @@
     border-radius: 20px;
     gap: 20px;
     transition: all ease 0.5s;
+    box-sizing: border-box;
+    overflow: auto;
 }
 #page-2-md > .items{
     width: 85vw;
@@ -193,6 +195,8 @@
     border-radius: 20px;
     gap: 20px;
     transition: all ease 0.5s;
+    box-sizing: border-box;
+    overflow: auto;
 }
 #itemcon{
     width: 78%;
@@ -462,5 +466,463 @@
     font-weight: 50;
     font-size: small;
     padding-bottom: 20px;
+}
+#blue{
+    width: 100%;
+    min-height: 270vh;
+    padding-bottom: 140px;
+    background-color: #6358DE;
+    border-top-left-radius:  40px 40px ;
+    border-top-right-radius:  40px 40px ;
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
+    position: relative;
+    bottom: 0;
+}
+#blue > #blue1{
+    width: 95%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 35px;
+    /* background-color: red; */
+}
+#blue > #blue1 > h1{
+    width: 90%;
+    /* background-color: #0B996E; */
+    font-family: "Inter Medium";
+    color: #FFFFFF;
+    font-size: xx-large;
+    text-align: center;
+}
+#blue > #blue1 > h4{
+    width: 100%;
+    color: #FFFFFF;
+    font-family: "Inter Medium";
+    font-size: larger;
+    font-weight: 50;
+    text-align: center;
+    line-height: 25px;
+}
+#blue > #blue2{
+    width: 90%;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: -35px;
+    /* background-color: black; */
+}
+#blue > #blue2 > img{
+    padding-left: 100px;
+    /* background-color: red; */
+}
+#blue > #blue3{
+    width: 82%;
+    height: 80vh;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: -70px ;
+}
+#blue3 > #star{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: #006A43; */
+    margin: auto;
+    gap: 20px;
+}
+#blue3 > #star >.star-dett{
+    margin: auto;
+    width: 80%;
+    height: 130px;
+    font-family:"Inter Medium";
+    color: #6358DE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#blue3 > #star >.star-dett > .star-point{
+    display: flex;
+    flex-direction: row;
+    scale: 1.8;
+    gap: 3px;
+}
+#blue3 > #star >.star-dett > .star-point > h3{
+    font-size: small;
+    font-weight: 400;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+.star-heading{
+    font-size: large;
+    font-weight: lighter;
+    color: #6459ded6;
+    padding-top: 2px;
+}
+#awards{
+    width: 100%;
+    min-height: 92vh;
+    border-top-left-radius:  35px 35px ;
+    border-top-right-radius:  35px 35px ;
+    background-color: #FFFFFF;
+    position: relative;
+    bottom: 120px;
+    z-index: 1;
+}
+#awards > h1{
+    font-family:"Inter Medium";
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+    color: #6358DE;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    letter-spacing: 1.5px;
+}
+#awards > div{
+    width: 80%;
+    /* background-color: #6358DE; */
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    margin: auto;
+    gap: 35px;
+}
+#awards > div > img{
+    scale: 1;
+}
+#center-ele{
+    grid-column:  span 2;
+    margin: auto;
+}
+#green-2{
+    width: 100%;
+    min-height: 120vh;
+    border-top-left-radius:  35px 35px ;
+    border-top-right-radius:  35px 35px ;
+    background-color: #006A43;
+    position: relative;
+    bottom: 98px;
+    z-index: 1;
+    padding-bottom: 100px;
+}
+#green-2-head{
+    width: 90%;
+    /* background-color: blue; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px; 
+}
+#green-2 >#green-2-head > h1{
+    width: 90%;
+    font-family: "Inter Medium";
+    color: #FFFFFF;
+    font-size: xx-large;
+    font-weight: 550;
+    text-align: center;
+    padding-top: 30px;
+    margin: auto;
+}
+#green-2 >#green-2-head > h4{
+    width: 99%;
+    /* background-color: red; */
+    color: #FFFFFF;
+    font-family: "Inter Medium";
+    font-size: larger;
+    font-weight: lighter;
+    font-weight: 50;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+    margin-top: -30px;
+}
+#scroller-1{
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position:absolute ;
+    top: 335px;
+}
+#scroller-1::-webkit-scrollbar{
+    display: none;
+}
+#scroller-1 > img{
+    height: 70px;
+    margin-right: 80px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-right: 85px;
+    animation-name:scrollbar;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    vertical-align: middle;
+}
+@keyframes scrollbar{
+    0%{
+        transform: translateX(calc(-100% - 712px));
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}  
+#scroller-1:hover > img{
+animation-play-state: paused;
+}
+#green-2 > #scroller-2{
+position: absolute;
+bottom: 300px;
+width: 100%;
+height: 100px;
+white-space: nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+}
+#green-2 > #scroller-2::-webkit-scrollbar{
+display: none;
+}
+#green-2 > #scroller-2 > img{
+height: 70px;
+margin-right: 80px;
+overflow-x: auto;
+overflow-y: hidden;
+animation-name: scrollbarr;
+animation-duration: 20s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+vertical-align: middle;
+}
+@keyframes scrollbarr{
+0%{
+    transform: translate(0%);
+}
+100%{
+    transform: translate(calc(-100% - 712px));
+}
+}
+#scroller-2:hover > img{
+animation-play-state: paused;
+}
+#green-2 > a > button{
+width: 80%;
+border: 2px solid #126144;
+border-radius: 18px;
+font-family: "Inter Medium";
+font-size: large;
+color:#FFFFFF ;
+background-color: #1B1B1B;
+padding: 13px 28px;
+transition: all ease 0.5s;
+position: absolute;
+bottom: 190px;
+left: 50%;
+transform: translate(-50%);
+cursor: default;
+}
+#green-2 > a > button:hover{
+background-color: #FFFFFF;
+color: #1F1F1F;
+cursor: pointer;
+}
+#sec-last{
+    width: 100%;
+        min-height: 45vh;
+        border-top-left-radius:  35px 35px ;
+        border-top-right-radius:  35px 35px ;
+        background-color: #D7FEC8;
+        position: relative;
+        bottom: 240px;
+        z-index: 1;
+}
+#sec-last >#sec-last-d > h1{
+    width: 50%;
+    /* background-color: #6358DE; */
+    font-family: "Inter Medium";
+    color: #0B996E;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 50px;
+}
+#sec-last >#sec-last-d > h4{
+    width: 50%;
+    /* background-color: #6358DE; */
+    color: #1B1B1B;
+    font-family: "Inter Medium";
+    font-size: large;
+    font-weight: 50;
+    text-align: center;
+    line-height: 25px;
+    margin: auto;
+    margin-top: -90px;
+}
+#sec-last > #sec-last-d{
+     width: 500px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    /* background-color: red; */
+}
+#sec-last >#sec-last-d > a > button{
+    width: 55%;
+    border: 2px solid #126144;
+    border-radius: 18px;
+    font-family: "Inter Medium";
+    font-size: large;
+    color:#FFFFFF ;
+    background-color: #1B1B1B;
+    padding: 13px 28px;
+    transition: all ease 0.5s;
+    /* margin-top: 10px; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    cursor: default;
+}
+#sec-last >#sec-last-d > a > button:hover{
+    background-color: #FFFFFF;
+    color: #1F1F1F;
+    cursor: pointer;
+}
+#end{
+    margin-top: -240px;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+#end-head{
+    width: 80%;
+    height: 15vh;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    margin: auto;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+#end-head > #end-logo{
+    height: 50px;
+    gap: 50px;
+    position: relative;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#end-logo > i {
+    scale: 2;
+    color: #097555;
+    cursor: default;
+    bottom: 0;
+}
+#end-logo > i:hover{
+    color: #006a43ac;
+    cursor: pointer;
+}
+#end-mid-head{
+    width: 100%;
+    height: 100vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 100px;
+}
+#end-mid{
+    width: 80%;
+    margin-top: 40px;
+    height: 100%;
+    /* background-color: #1EB9B9; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+#end-mid > div{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#end-mid > div > h3{
+    font-family: "Inter Medium";
+    font-size: large;
+    font-weight: lighter;
+    padding-bottom: 25px;
+}
+#end-mid > div > a > h4{
+    font-family: "Inter Medium";
+    text-decoration: underline #FFFFFF;
+    font-size: small;
+    font-weight: 10;
+    color: #1b1b1bb6;
+    padding-bottom: 25px;
+    cursor: default;
+}
+#end-mid > div > a >h4:hover{
+    color: #1b1b1b88;
+    text-decoration: underline #1b1b1bb6;
+    cursor: pointer;
+}
+#end-line{
+    position: relative;
+    width: 90%;
+    height: 55vh;
+    margin: auto;
+    /* background-color: blue; */
+    border-top: 1px solid black;
+}
+#end-line > div{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#end-line >div > h4{
+    font-family: "Inter Medium";
+    font-size: small;
+    font-weight: 10;
+    color: #1b1b1bd7;
+}
+#end-line >div > h4:hover{
+    color: #1b1b1b88;
+    text-decoration: underline #1b1b1bb6;
+    cursor: pointer
 }
 }

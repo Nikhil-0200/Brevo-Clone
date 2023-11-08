@@ -519,6 +519,7 @@ html, body{
         font-size: 3vw;
     }
     #blue > #blue1 > h4{
+        width: 80%;
         color: #FFFFFF;
         font-family: "Inter Medium";
         font-size: 1.3vw;
@@ -626,19 +627,23 @@ html, body{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        width: 70%;
+        width: 58%;
+        /* background-color: red; */
         height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 40px; 
     }
     #green-2 >#green-2-head > h1{
+        width: 95%;
+        /* margin: auto; */
         font-family: "Inter Medium";
         color: #FFFFFF;
         font-size: 3vw;
         text-align: center;
-        padding-top: 30px;
+        /* padding-top: 30px; */
     }
     #green-2 >#green-2-head > h4{
         color: #FFFFFF;
@@ -647,6 +652,7 @@ html, body{
         font-weight: 50;
         text-align: center;
         line-height: 25px;
+        /* margin-top: -100px; */
     }
     #scroller-1{
         width: 100%;
@@ -871,7 +877,6 @@ html, body{
     text-decoration: underline #1b1b1bb6;
     cursor: pointer;
 }
-
 #end-line{
     position: relative;
     width: 90%;
