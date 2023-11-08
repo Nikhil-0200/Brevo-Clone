@@ -1,0 +1,466 @@
+@media all and (max-width: 600px)
+{
+
+#nav{
+    width: 100%;
+    height: 88px;
+    background-color: #D7FEC8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: fixed;
+    z-index: 2;
+}
+#nav1{
+    flex-direction: row;
+    display: inline;
+    /* background-color: aqua; */
+    font-family: "Inter Medium";
+    font-size: 9vw;
+    color: #0B996E;
+    font-weight: 550;
+}
+#nav-logo{
+    display: block;
+    scale: 2;
+}
+#nav > #nav2{
+    display: none;
+}
+#nav > #nav3{
+    display: none;
+}
+#but-phone{
+    width: 70vw;
+    border: 2px solid #1B1B1B;
+    border-radius: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: "Inter Medium";
+    font-size: 5vw;
+    color:#FFFFFF ;
+    background-color: #1B1B1B;
+    padding: 13px 28px;
+    transition: all ease 0.5s;
+    cursor: default;
+    margin-top: -5vh;
+}
+#but-phone:hover{
+    background-color: #FFFFFF;
+}
+#page-1{
+    height: 120vh;
+    width: 100%;
+    background-color: #D7FEC8;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 80px 80px;
+    padding-top: 13vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vw;
+}
+#page-1 > #page-1-l{
+    /* background-color: aqua; */
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-around;
+    position: relative;
+     bottom: 2vh;
+}
+#page-1-l > h1{
+    /* background-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vw;
+    text-align: center;
+    font-family: "Inter Medium";
+    font-size: 11vw;
+    color: #0B996E;
+    font-weight: 580;
+    line-height: 45px;
+    margin-bottom: -10vh;
+}
+#page-1-l > p{
+    width: 75vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: aquamarine; */
+    font-family: "Inter Medium";
+    font-size: 5vw;
+    color: #1f1c19e0;
+    font-weight: lighter;
+    line-height: 25px;
+    /* background-color: red; */
+}
+#page-1 > #page-1-r{
+    width: 85vw;
+    /* background-color: red; */
+    height: 30vh;
+    /* border: 1px solid #0B996E; */
+}
+#page-1-r > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page-2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+#page-2-top{
+    width: 100%;
+    height: 25vh;
+    margin-top: 5vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#page-2-top > h1{
+    font-family: "Inter Medium";
+    font-size: 11vw;
+    color: #0B996E;
+    font-weight: 580;
+    line-height: 30px;
+    text-align: center;
+}
+#page-2-top > p{
+    width: 80vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: aquamarine; */
+    font-family: "Inter Medium";
+    font-size: 5vw;
+    color: #1f1c19e0;
+    font-weight: lighter;
+    line-height: 25px;
+}
+#page-2-m{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    margin-bottom: 30vh;
+    /* background-color: #1B1B1B; */
+}
+#page-2-mu{
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#page-2-md{
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#page-2-mu > .items{
+    width: 85vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+    transition: all ease 0.5s;
+}
+#page-2-md > .items{
+    width: 85vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+    transition: all ease 0.5s;
+}
+#itemcon{
+    width: 78%;
+    height: 50%;
+    /* background-color: #0B996E; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#itemcon > h1{
+    width: 100%;
+    /* background-color: red; */
+    font-family: "Inter Medium";
+    font-size: 6.5vw;
+    font-weight: 550;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#itemcon > h3{
+    font-family: "Inter Medium";
+    text-align: center;
+    font-size: 4.5vw;
+    font-weight: 250;
+    color: rgba(0, 0, 0, 0.896);
+    padding-bottom: 5px;
+}
+#itemcon > h2{
+    font-family: "Inter Medium";
+    font-size: 6vw;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 25px;
+}
+#itemcon > p{
+    display: none;
+}
+.items > #imgdiv{
+    width: 150px;
+    height: 150px;
+    margin-top: 35px;
+    border-radius: 50%;
+}
+#page-2-m1{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: red; */
+}
+#page-2-m1 > #green-div{
+    width: 100%;
+    height: 115vh;
+    background-color: #006A43;
+    margin-top: -5%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+#green-img{
+    width: 310px;
+    height: 230px;
+    border-radius: 35px;
+    position: absolute;
+    left: 15px;
+    top: -60px;
+    background-image: url(https://corp-backend.brevo.com/wp-content/uploads/2023/10/Image-for-BF-ebook-promo-on-homepage_EN.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#green-box{
+    margin-top: 25vh;
+    width: 100%;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+    color: #FFFFFF;
+    font-family:"Inter Medium" ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#green-box > h4{
+    font-weight: 50;
+    font-size: medium;
+    text-align: center;
+}
+#green-box > h1{
+    /* background-color: #126144; */
+    width: 80%;
+    font-weight: 650;
+    font-size: 10vw;
+    text-align: center;
+    padding: 25px 0px;
+    letter-spacing: 1px;
+}
+#green-box > h3{
+    font-weight: 50;
+    font-size: large;
+    line-height: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+#green-box > a > button{
+    width: 75vw;
+    border: 2px solid #126144;
+    border-radius: 18px;
+    font-family: "Inter Medium";
+    font-size: 5vw;
+    color:#FFFFFF ;
+    background-color: #1B1B1B;
+    padding: 15px 30px;
+    transition: all ease 0.5s;
+    cursor: default;
+    }
+#green-box> a > button:hover{
+    background-color: #FFFFFF;
+    color: #1F1F1F;
+    cursor: pointer;
+}
+#everyone{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+#eve-left{
+    /* background-color: red; */
+    width: 100%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#eve-left > h1{
+    margin-top: 10vh;
+    text-align: center;
+    width: 90%;
+    /* background-color: red; */
+    font-family: "Inter Medium";
+    font-size: 11vw;
+    color: #0B996E;
+    font-weight: 580;
+    line-height: 55px;
+}
+#eve-left > div > h3 > .ri-arrow-right-line{
+    opacity: 0;
+}
+
+#eve-left > div > h3{
+    font-family: "Inter Medium";
+    font-size: 1.5vw;
+    color: #1b1b1bee;
+    font-weight: 650;
+    letter-spacing: 1.1px;
+    padding-bottom: 20px;
+    transition: all ease 0.5s;
+    cursor: default;
+    display: none;
+}
+#eve-left > div > h3:hover{
+    color: #0B996F;
+    text-decoration: underline;
+   transition: color 0s ;
+   cursor: pointer;  
+   display: none;
+}
+#customers{
+    width: 80vw;
+    position: absolute;
+    bottom: -180px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #126144;
+    border-radius: 18px;
+    font-family: "Inter Medium";
+    font-size: 5vw;
+    color:#FFFFFF ;
+    background-color: #1B1B1B;
+    padding: 13px 28px;
+    transition: all ease 0.5s;
+    cursor: default;
+}
+#customers:hover{
+    background-color: #FFFFFF;
+    color: #1F1F1F;
+    cursor: pointer;
+}
+#eve-right{
+    /* background-color: blue; */
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: -370px;
+}
+#eve-right > #right-img{
+    width: 130px;
+    height: 130px;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    border: 2px solid #0B996F;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 0px;
+    z-index: 1;
+}
+#eve-right > #right-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+}
+#eve-right > #right-msg{
+    width: 300px;
+    height: 240px;
+    border-top-left-radius: 40px ;
+    border-bottom-right-radius: 40px ;
+    border: 2px solid #0B996F;
+    background-color: #D7FEC8;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+}
+#right-msg > div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+#right-msg > div > h4{
+    font-family: "Inter Medium";
+    color: #0B996F;
+    font-weight: 50;
+    font-size: large;
+    line-height: 25px;
+    padding-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+#right-msg > div > #msg-one{
+    font-family: "Inter Medium";
+    color: black;
+    font-weight: 200;
+    font-size: small;
+    line-height: 25px;
+    margin-top: -20px;
+}
+#right-msg > div > #msg-two{
+    font-family: "Inter Medium";
+    color: rgba(0, 0, 0, 0.805);
+    font-weight: 50;
+    font-size: small;
+    padding-bottom: 20px;
+}
+}
