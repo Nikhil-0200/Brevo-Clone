@@ -5,6 +5,7 @@ let evel3 = document.getElementById('three');
 let evel4 = document.getElementById('four');
 let evel5 = document.getElementById('five');
 
+
 let imageArr = [
     "https://corp-backend.brevo.com/wp-content/uploads/2023/07/SMBS-1.jpg",
     "https://corp-backend.brevo.com/wp-content/uploads/2023/07/startups_2x.webp",
@@ -126,6 +127,89 @@ evel5.addEventListener('click', function()
     arrow[4].style.opacity = '1';
 })
 
+let product = [
+
+    {
+        id:1,
+        imgSrc: "https://corp-backend.brevo.com/wp-content/uploads/2023/02/Vector.svg",
+        heading: "Marketing Platform",
+        para2: "Create brilliant campaigns with email, SMS, automation, and more"
+    },
+    {
+        id:2,
+        imgSrc: "https://corp-backend.brevo.com/wp-content/uploads/2023/02/Vector-1.svg",
+        heading: "Sales Platform",
+        para2: "Keep a sharp eye on people, pipelines, leads, and deals"
+    },{
+        id:3,
+        imgSrc: "https://corp-backend.brevo.com/wp-content/uploads/2023/09/Brevo64.svg",
+        heading: "BrevoPlus",
+        para2: "A bespoke all-in-one digital marketing solution tailored to your needs"
+    },{
+        id:4,
+        imgSrc: "https://corp-backend.brevo.com/wp-content/uploads/2023/04/TransactionalEmails-64.svg",
+        heading: "Transactional Email",
+        para2: "Send thousands of emails right on cue with our powerful API"
+    },{
+        id:5,
+        imgSrc: "https://corp-backend.brevo.com/wp-content/uploads/2023/09/Conversations-64-1.svg",
+        heading: "Conversations",
+        para2: "Be there for your customers with our one-on-one chat tools"
+    },
+]
+
+let root = document.getElementById("root");
+let currentProduct = "";
+let cont = document.createElement("div");
+cont.id = "cont1";
+
+for(let i=0; i<product.length; i++)
+{
+
+    currentProduct = product[i];
+
+
+let items = document.createElement("div");
+items.className = "all-items";
+
+let itemImage = document.createElement("div");
+let imageEle = document.createElement("img");
+imageEle.src = currentProduct.imgSrc;
+itemImage.appendChild(imageEle);
+
+let itemHeadimg = document.createElement("h1");
+itemHeadimg.textContent = currentProduct.heading
+
+let itemPara = document.createElement("h4");
+itemPara.textContent = currentProduct.para2
+
+items.append(
+    itemImage,
+    itemHeadimg,
+    itemPara
+);
+
+cont.append(items);
+root.append(cont);
+
+}
+
+
+let newa = document.querySelector("#nav2 > h2:first-child");
+let ele1Div = newa.querySelector("#ele1 > div");
+
+newa.addEventListener("mouseenter", function(event) {
+    gsap.fromTo(ele1Div, 
+        { opacity: 0, height: 0, display: 'block' }, 
+        { opacity: 1, height: '450px', ease: Power1, timeDuration: 2, marginTop: "30px" },
+        
+    );
+});
+
+newa.addEventListener("mouseleave", function(event) {
+    gsap.to(ele1Div, { opacity: 0, height: 0, ease: Power1, display: 'none' });
+   
+});
 
 
 
